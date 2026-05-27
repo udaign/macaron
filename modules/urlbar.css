@@ -4,32 +4,21 @@
 #urlbar[breakout][breakout-extend="true"] {
   border: 3px solid currentColor !important;
   border-radius: 12px !important;
-  box-shadow: var(--mac-shadow-strong) var(--mac-shadow-strong) 0 currentColor !important;
-  transition: transform 0.1s ease,
-              box-shadow 0.1s ease !important;
+  transform: translate(var(--mac-shadow-size), var(--mac-shadow-size)) !important;
+  box-shadow: 0 0 0 currentColor !important;
+  transition: transform 0.1s ease !important;
 }
 
 #urlbar[breakout][breakout-extend="true"] .urlbar-background {
   box-shadow: none !important;
   filter: none !important;
-}
-
-#urlbar[breakout][breakout-extend="true"] .urlbar-background {
   border-radius: 12px !important;
 }
 
 #urlbar[open][zen-floating-urlbar="true"][breakout][breakout-extend="true"] {
   min-width: unset !important;
   max-width: unset !important;
-}
-
-#urlbar[open][zen-floating-urlbar="true"][breakout][breakout-extend="true"] {
   --zen-urlbar-width: 500px !important;
-}
-
-#urlbar[breakout][breakout-extend="true"]:active {
-  transform: translate(var(--mac-shadow-strong), var(--mac-shadow-strong)) !important;
-  box-shadow: 0 0 0 currentColor !important;
 }
 
 

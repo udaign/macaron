@@ -7,8 +7,7 @@
 
   box-shadow: var(--mac-shadow-size) var(--mac-shadow-size) 0 currentColor !important;
 
-  transition: transform 0.1s ease,
-              box-shadow 0.1s ease !important;
+  transition: transform 0.1s ease !important;
 }
 
 
@@ -52,8 +51,7 @@ tab[pinned="true"] .tab-background {
   border: 2px solid currentColor !important;
   border-radius: 12px !important;
   box-shadow: var(--mac-shadow-size) var(--mac-shadow-size) 0 currentColor !important;
-  transition: transform 0.1s ease,
-              box-shadow 0.1s ease !important;
+  transition: transform 0.1s ease !important;
 }
 
 
@@ -115,8 +113,7 @@ tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background {
   border: 2px solid currentColor !important;
   border-radius: 10px !important;
   box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0 currentColor !important;
-  transition: transform 0.1s ease,
-              box-shadow 0.1s ease !important;
+  transition: transform 0.1s ease !important;
   margin-bottom: 4px !important;
 }
 
@@ -255,9 +252,7 @@ zen-folder:not([collapsed]) {
   margin: 16px 16px 20px 16px !important;
   overflow: hidden !important;
 
-  transition:
-    transform 0.12s ease,
-    box-shadow 0.12s ease !important;
+  transition: transform 0.12s ease !important;
 }
 
 :root[zen-compact-mode="true"] #titlebar:hover {
@@ -299,9 +294,7 @@ zen-folder:not([collapsed]) {
 #zen-media-controls-toolbar {
   box-shadow: 0 0 0 currentColor !important;
   transform: translate(var(--mac-shadow-soft), var(--mac-shadow-soft)) !important;
-  transition:
-    transform 0.12s ease,
-    box-shadow 0.12s ease !important;
+  transition: transform 0.12s ease !important;
 }
 
 #zen-media-controls-toolbar.playing {
@@ -345,11 +338,5 @@ zen-folder:not([collapsed]) {
 }
 
 #zen-sidebar-top-buttons-customization-target #reload-button:hover image{
-  background-color: transparent !important;
-}
-
-#zen-sidebar-top-buttons-customization-target #reload-button:hover image{
   transform: rotate(180deg) !important;
-  transition: transform 0.12s ease !important;
 }
-

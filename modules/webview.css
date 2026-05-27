@@ -46,36 +46,9 @@
   overflow: visible !important;
 }
 
-/* tab switch animation */
-
-#browser #tabbrowser-tabpanels:not([zen-split-view="true"])
-> .browserSidebarContainer {
-  opacity: 0;
-  transform: scaleY(0.97);
-  filter: brightness(1.1);
-}
-
-#browser #tabbrowser-tabpanels:not([zen-split-view="true"])
-> .browserSidebarContainer.deck-selected {
-  opacity: 1;
-  transform: scaleY(1);
-  filter: brightness(1);
-
-  transition:
-    transform .1s ease,
-    opacity .08s ease,
-    filter .1s ease !important;
-}
 
 #tabbrowser-tabpanels {
-  transition:
-    transform 0.12s ease,
-    box-shadow 0.12s ease !important;
-}
-
-:root:has(.tabbrowser-tab:active) #tabbrowser-tabpanels {
-  transform: translate(var(--mac-shadow-soft), var(--mac-shadow-soft)) !important;
-  box-shadow: 0 0 0 currentColor !important;
+  transition: transform 0.12s ease !important;
 }
 
 /* CONTEXT MENU */
