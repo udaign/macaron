@@ -1,12 +1,12 @@
 /* window border */
 
 :root[sizemode="normal"] #zen-browser-background {
-  border: 2px solid light-dark(black, white) !important;
+  border: none !important;
   border-radius: var(--mac-border-radius, 8px) !important;
 }
 
 :root[sizemode="maximized"] #zen-browser-background {
-  border: 2px solid light-dark(black, white) !important;
+  border: none !important;
 }
 
 :root[sizemode="fullscreen"][inDOMFullscreen="true"] #tabbrowser-tabpanels {
@@ -35,7 +35,7 @@
 #tabbrowser-tabpanels {
   border: 2px solid currentColor !important;
   border-radius: var(--zen-border-radius) !important;
-  box-shadow: 3px 3px 0 currentColor !important;
+  box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0 currentColor !important;
   overflow: hidden !important;
   margin-right: 3px !important;
   margin-bottom: 3px !important;
@@ -74,8 +74,8 @@
 }
 
 :root:has(.tabbrowser-tab:active) #tabbrowser-tabpanels {
-  transform: translate(2px, 2px) !important;
-  box-shadow: 1px 1px 0 currentColor !important;
+  transform: translate(var(--mac-shadow-soft), var(--mac-shadow-soft)) !important;
+  box-shadow: 0 0 0 currentColor !important;
 }
 
 /* CONTEXT MENU */

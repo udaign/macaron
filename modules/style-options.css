@@ -101,24 +101,6 @@ zen-folder[collapsed] .tab-group-label-container {
   }
 }
 
-/* Shadow intensity */
-tab[zen-essential="true"] .tab-background,
-tab[pinned="true"] .tab-background,
-#tabs-newtab-button,
-zen-folder[collapsed] .tab-group-label-container,
-#urlbar:not([breakout-extend="true"]) {
-  box-shadow: var(--mac-shadow-size) var(--mac-shadow-size) 0 currentColor !important;
-}
-
-#urlbar[breakout][breakout-extend="true"] {
-  box-shadow: var(--mac-shadow-strong) var(--mac-shadow-strong) 0 currentColor !important;
-}
-
-tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background,
-#zen-media-controls-toolbar.playing {
-  box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0 currentColor !important;
-}
-
 /* Consistent pressed surfaces */
 @media (-moz-pref("mac.toolbar-hover.enabled")) {
   #zen-sidebar-top-buttons toolbarbutton,
@@ -166,57 +148,6 @@ tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background,
   #downloads-button:active {
     transform: translate(var(--mac-shadow-soft), var(--mac-shadow-soft)) !important;
     box-shadow: none !important;
-  }
-}
-
-/* Optional doodle pack */
-@media (-moz-pref("mac.doodles")) {
-  @media (-moz-pref("mac.doodle-pack", "none")) {
-    #nav-bar::before,
-    .zen-current-workspace-indicator::after {
-      display: none !important;
-    }
-  }
-
-  @media (-moz-pref("mac.doodle-pack", "star")) {
-    #nav-bar::before,
-    .zen-current-workspace-indicator::after {
-      background: none !important;
-      color: currentColor !important;
-      font-size: 22px !important;
-      line-height: 1 !important;
-      text-align: center !important;
-    }
-
-    #nav-bar::before {
-      content: "*" !important;
-    }
-
-    .zen-current-workspace-indicator::after {
-      content: "+" !important;
-    }
-  }
-
-  @media (-moz-pref("mac.doodle-pack", "flower")) {
-    #nav-bar::before,
-    .zen-current-workspace-indicator::after {
-      background: none !important;
-      color: currentColor !important;
-      font-size: 21px !important;
-      line-height: 1 !important;
-      text-align: center !important;
-    }
-
-    #nav-bar::before {
-      content: "x" !important;
-      transform: rotate(45deg) !important;
-    }
-
-    .zen-current-workspace-indicator::after {
-      content: "." !important;
-      border: 2px solid currentColor !important;
-      border-radius: 50% !important;
-    }
   }
 }
 

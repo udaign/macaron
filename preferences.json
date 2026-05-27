@@ -105,27 +105,6 @@
 
   {
     "type": "checkbox",
-    "property": "mac.doodles",
-    "label": "Enable doodles!",
-    "defaultValue": false
-  },
-
-  {
-    "type": "dropdown",
-    "property": "mac.doodle-pack",
-    "label": "Doodle pack",
-    "value": "string",
-    "defaultValue": "coffee",
-    "options": [
-      { "value": "coffee", "label": "Coffee" },
-      { "value": "star", "label": "Star" },
-      { "value": "flower", "label": "Flower" },
-      { "value": "none", "label": "None" }
-    ]
-  },
-
-  {
-    "type": "checkbox",
     "property": "mac.reduced-motion",
     "label": "Reduce motion",
     "defaultValue": false

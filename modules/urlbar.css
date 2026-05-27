@@ -4,7 +4,7 @@
 #urlbar[breakout][breakout-extend="true"] {
   border: 3px solid currentColor !important;
   border-radius: 12px !important;
-  box-shadow: 6px 6px 0px currentColor !important;
+  box-shadow: var(--mac-shadow-strong) var(--mac-shadow-strong) 0 currentColor !important;
   transition: transform 0.1s ease,
               box-shadow 0.1s ease !important;
 }
@@ -28,8 +28,8 @@
 }
 
 #urlbar[breakout][breakout-extend="true"]:active {
-  transform: translate(6px, 6px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  transform: translate(var(--mac-shadow-strong), var(--mac-shadow-strong)) !important;
+  box-shadow: 0 0 0 currentColor !important;
 }
 
 

@@ -27,7 +27,6 @@ Built for people who think browsers should feel fun again.
 - Shadow intensity: None, Soft, Classic, Chunky.
 - Browser spacing: Macaron, Tight, Marginless.
 - Macaron URL bar popup styling.
-- Doodle pack: Coffee, Star, Flower, None.
 - Reduced motion toggle.
 
 ---
