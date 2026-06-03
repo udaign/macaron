@@ -255,17 +255,6 @@ zen-folder:not([collapsed]) {
   transition: transform 0.12s ease !important;
 }
 
-:root[zen-compact-mode="true"] #titlebar:hover {
-  box-shadow: 0 0 0 currentColor !important;
-  transform: translate(var(--mac-shadow-size), var(--mac-shadow-size)) !important;
-}
-
-/* move urlbar when titlebar hovered */
-:root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar {
-  transform: translate(var(--mac-shadow-size), var(--mac-shadow-size)) !important;
-  transition: transform 0.12s ease !important;
-}
-
 /*to align the sidebar */
 :root[zen-compact-mode="true"] #titlebar {
   padding-right: 6px !important;

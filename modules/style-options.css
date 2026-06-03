@@ -4,9 +4,9 @@
   --mac-accent: #ffb3c1;
   --mac-accent-2: #fff1d6;
   --mac-accent-3: #bde0fe;
-  --mac-shadow-size: 4px;
-  --mac-shadow-strong: 6px;
-  --mac-shadow-soft: 2px;
+  --mac-shadow-size: 3px;
+  --mac-shadow-strong: 3px;
+  --mac-shadow-soft: 3px;
 }
 
 @media (-moz-pref("mac.shadow-level", 0)) {
